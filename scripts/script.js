@@ -5,6 +5,7 @@ function userPlay() {
 }
 
 const userChoice = userPlay()
+console.log(userChoice)
 alert("Your choice is " + userChoice)
 //Randomize Computer Choice for Rock, Paper, or Scissors
 function computerChoice() {
@@ -13,6 +14,7 @@ function computerChoice() {
 }
 
 const computerPlay = computerChoice()
+console.log(computerPlay)
 alert("The computer chose " + computerPlay)
 //Compare Player vs Computer Choice Function for One Game
 function rpsRound() {
