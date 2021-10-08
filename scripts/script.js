@@ -1,11 +1,20 @@
 // My Scripts
-//Prompt User for Rock, Paper, or Scissors and Store Answer
-const userChoice = window.prompt("Choose Rock, Paper, or Scissors: ")
+//Function to Prompt User for Rock, Paper, or Scissors and Store Answer
+function userPlay() {
+  return window.prompt("Choose Rock, Paper, or Scissors")
+}
+
+const userChoice = userPlay()
 alert("Your choice is " + userChoice)
 //Randomize Computer Choice for Rock, Paper, or Scissors
-const computerChoices = ["Rock", "Paper", "Scissors"]
-const computerPlay =
-  computerChoices[Math.floor(Math.random() * computerChoices.length)]
+function computerChoice() {
+  const computerChoices = ["Rock", "Paper", "Scissors"]
+  const computerPick =
+    computerChoices[Math.floor(Math.random() * computerChoices.length)]
+  return computerPick
+}
+
+const computerPlay = computerChoice()
 alert("The computer chose " + computerPlay)
 //Compare Player vs Computer Choice Function for One Game
 function rpsRound() {
