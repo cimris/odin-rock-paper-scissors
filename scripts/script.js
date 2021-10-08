@@ -7,7 +7,7 @@ const computerChoices = ["Rock", "Paper", "Scissors"]
 const computerPlay =
   computerChoices[Math.floor(Math.random() * computerChoices.length)]
 alert("The computer chose " + computerPlay)
-//Compare Player vs Computer Choice for One Game
+//Compare Player vs Computer Choice Function for One Game
 function rpsGame() {
   if (userChoice === computerPlay) {
     alert("Draw")
