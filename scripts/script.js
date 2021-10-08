@@ -7,6 +7,7 @@ let userPlay = window.prompt("Choose Rock, Paper, or Scissors: ")
 alert("Your choice is " + userPlay)
 //Randomize Computer Choice for Rock, Paper, or Scissors and Store Answer
 let computerPlay = choices[Math.floor(Math.random() * choices.length)]
+alert("The computer chose " + computerPlay)
 //Compare Player vs Computer Choice
 if (userPlay === computerPlay) {
   alert("Draw")
