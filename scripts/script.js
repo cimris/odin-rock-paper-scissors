@@ -1,4 +1,7 @@
 // My Scripts
+//Score
+let playerScore = 0
+let computerScore = 0
 //Prompt User for Rock, Paper, or Scissors
 function userPlay() {
   return window.prompt("Choose Rock, Paper, or Scissors").toLowerCase()
