@@ -3,15 +3,8 @@
 //Make an Array For Choices
 const choices = ["Rock", "Paper", "Scissors"]
 //Prompt User for Rock, Paper, or Scissors and Store Answer
-function userPlay() {
-  var userChoice = document.querySelector(
-    'input[name="user-choice"]:checked'
-  ).value
-  alert(userChoice + " was selected!")
-  return userChoice
-}
-
-console.log(userPlay)
+let userPlay = window.prompt("Choose Rock, Paper, or Scissors: ")
+alert("Your choice is " + userPlay)
 //Randomize Computer Choice for Rock, Paper, or Scissors
 let computerPlay = choices[Math.floor(Math.random() * choices.length)]
 console.log(computerPlay)
