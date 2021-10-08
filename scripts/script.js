@@ -1,26 +1,27 @@
 // My Scripts
 //Prompt User for Rock, Paper, or Scissors and Store Answer
-const userPlay = window.prompt("Choose Rock, Paper, or Scissors: ")
-alert("Your choice is " + userPlay)
+
+const userChoice = window.prompt("Choose Rock, Paper, or Scissors: ")
+alert("Your choice is " + userChoice)
 //Randomize Computer Choice for Rock, Paper, or Scissors
 const computerChoices = ["Rock", "Paper", "Scissors"]
 const computerPlay =
   computerChoices[Math.floor(Math.random() * computerChoices.length)]
 alert("The computer chose " + computerPlay)
 //Compare Player vs Computer Choice for One Game
-if (userPlay === computerPlay) {
+if (userChoice === computerPlay) {
   alert("Draw")
-} else if (userPlay === "Rock" && computerPlay === "Paper") {
+} else if (userChoice === "Rock" && computerPlay === "Paper") {
   alert("You Lose")
-} else if (userPlay === "Rock" && computerPlay === "Scissors") {
+} else if (userChoice === "Rock" && computerPlay === "Scissors") {
   alert("You Win")
-} else if (userPlay === "Paper" && computerPlay === "Rock") {
+} else if (userChoice === "Paper" && computerPlay === "Rock") {
   alert("You Win")
-} else if (userPlay === "Paper" && computerPlay === "Scissors") {
+} else if (userChoice === "Paper" && computerPlay === "Scissors") {
   alert("You Lose")
-} else if (userPlay === "Scissors" && computerPlay === "Rock") {
+} else if (userChoice === "Scissors" && computerPlay === "Rock") {
   alert("You Lose")
-} else if (userPlay === "Scissors" && computerPlay === "Paper") {
+} else if (userChoice === "Scissors" && computerPlay === "Paper") {
   alert("You Win")
 } else {
   alert("Something went wrong...")
