@@ -5,11 +5,12 @@ const choices = ["Rock", "Paper", "Scissors"]
 //Prompt User for Rock, Paper, or Scissors and Store Answer
 let userPlay = window.prompt("Choose Rock, Paper, or Scissors: ")
 alert("Your choice is " + userPlay)
-//Randomize Computer Choice for Rock, Paper, or Scissors
+//Randomize Computer Choice for Rock, Paper, or Scissors and Store Answer
 let computerPlay = choices[Math.floor(Math.random() * choices.length)]
-console.log(computerPlay)
-//Store Answer in a Variable
 //Compare Player vs Computer Choice
+if (userPlay === computerPlay) {
+  alert("Draw")
+}
 //if Player picks Rock
 //and Computer pics Rock = Tie
 //and Computer pics Paper = Draw
