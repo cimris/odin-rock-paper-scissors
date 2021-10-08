@@ -1,8 +1,11 @@
 // My Scripts
 
+//Make an Array For Choices
+const choices = ['Rock', 'Paper', 'Scissors']
 //Prompt User for Rock, Paper, or Scissors
 //Store Answer in a Variable
 //Randomize Computer Choice for Rock, Paper, or Scissors
+var computerPlay = 
 //Store Answer in a Variable
 //Compare Player vs Computer Choice
 //if Player picks Rock
