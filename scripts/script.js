@@ -5,7 +5,7 @@ function userPlay() {
 }
 
 const userChoice = userPlay()
-console.log(userChoice)
+console.log(userChoice) //delete later
 alert("Your choice is " + userChoice)
 //Randomize Computer Choice for Rock, Paper, or Scissors
 function computerChoice() {
@@ -14,7 +14,7 @@ function computerChoice() {
 }
 
 const computerPlay = computerChoice()
-console.log(computerPlay)
+console.log(computerPlay) //delete later
 alert("The computer chose " + computerPlay)
 //Compare Player vs Computer Choice Function for One Game
 function rpsRound() {
@@ -36,7 +36,7 @@ function rpsRound() {
     return "Something went wrong..."
   }
 }
-console.log(rpsRound())
+console.log(rpsRound()) //delete later
 alert(rpsRound())
 //create new function for 5 round game
 //keep track of scores for rounds
