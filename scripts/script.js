@@ -1,12 +1,11 @@
 // My Scripts
-
-//Make an Array For Choices
-const choices = ["Rock", "Paper", "Scissors"]
 //Prompt User for Rock, Paper, or Scissors and Store Answer
 const userPlay = window.prompt("Choose Rock, Paper, or Scissors: ")
 alert("Your choice is " + userPlay)
-//Randomize Computer Choice for Rock, Paper, or Scissors and Store Answer
-const computerPlay = choices[Math.floor(Math.random() * choices.length)]
+//Randomize Computer Choice for Rock, Paper, or Scissors
+const computerChoices = ["Rock", "Paper", "Scissors"]
+const computerPlay =
+  computerChoices[Math.floor(Math.random() * computerChoices.length)]
 alert("The computer chose " + computerPlay)
 //Compare Player vs Computer Choice for One Game
 if (userPlay === computerPlay) {
