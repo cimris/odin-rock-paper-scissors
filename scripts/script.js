@@ -1,36 +1,36 @@
 // My Scripts
 //Prompt User for Rock, Paper, or Scissors
 function userPlay() {
-  return window.prompt("Choose Rock, Paper, or Scissors")
+  return window.prompt("Choose Rock, Paper, or Scissors").toLowerCase()
 }
 
 const userChoice = userPlay()
 console.log(userChoice) //delete later
-alert("Your choice is " + userChoice)
+alert("Your choice is " + userChoice + ".")
 //Randomize Computer Choice for Rock, Paper, or Scissors
 function computerChoice() {
-  const computerChoices = ["Rock", "Paper", "Scissors"]
+  const computerChoices = ["rock", "paper", "scissors"]
   return computerChoices[Math.floor(Math.random() * computerChoices.length)]
 }
 
 const computerPlay = computerChoice()
 console.log(computerPlay) //delete later
-alert("The computer chose " + computerPlay)
+alert("The computer chose " + computerPlay + ".")
 //Compare Player vs Computer Choice Function for One Game
 function rpsRound() {
   if (userChoice === computerPlay) {
     return "Draw"
-  } else if (userChoice === "Rock" && computerPlay === "Paper") {
+  } else if (userChoice === "rock" && computerPlay === "paper") {
     return "You Lose"
-  } else if (userChoice === "Rock" && computerPlay === "Scissors") {
+  } else if (userChoice === "rock" && computerPlay === "scissors") {
     return "You Win"
-  } else if (userChoice === "Paper" && computerPlay === "Rock") {
+  } else if (userChoice === "paper" && computerPlay === "rock") {
     return "You Win"
-  } else if (userChoice === "Paper" && computerPlay === "Scissors") {
+  } else if (userChoice === "paper" && computerPlay === "scissors") {
     return "You Lose"
-  } else if (userChoice === "Scissors" && computerPlay === "Rock") {
+  } else if (userChoice === "scissors" && computerPlay === "rock") {
     return "You Lose"
-  } else if (userChoice === "Scissors" && computerPlay === "Paper") {
+  } else if (userChoice === "scissors" && computerPlay === "paper") {
     return "You Win"
   } else {
     return "Something went wrong..."
