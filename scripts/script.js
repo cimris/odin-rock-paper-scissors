@@ -1,5 +1,5 @@
 // My Scripts
-//Function to Prompt User for Rock, Paper, or Scissors and Store Answer
+//Prompt User for Rock, Paper, or Scissors
 function userPlay() {
   return window.prompt("Choose Rock, Paper, or Scissors")
 }
