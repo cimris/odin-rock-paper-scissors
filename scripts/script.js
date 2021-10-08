@@ -8,7 +8,7 @@ alert("Your choice is " + userPlay)
 //Randomize Computer Choice for Rock, Paper, or Scissors and Store Answer
 let computerPlay = choices[Math.floor(Math.random() * choices.length)]
 alert("The computer chose " + computerPlay)
-//Compare Player vs Computer Choice
+//Compare Player vs Computer Choice for One Game
 if (userPlay === computerPlay) {
   alert("Draw")
 } else if (userPlay === "Rock" && computerPlay === "Paper") {
@@ -27,7 +27,7 @@ if (userPlay === computerPlay) {
   alert("Something went wrong...")
 }
 
-//keep track of winner and loser points??
-//return result to Player
-
-//repeat for 5 rounds and report score??
+//create new function for 5 round game
+//keep track of scores for rounds
+//return score to player each round
+//determine game winner
