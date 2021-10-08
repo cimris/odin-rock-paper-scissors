@@ -9,9 +9,7 @@ alert("Your choice is " + userChoice)
 //Randomize Computer Choice for Rock, Paper, or Scissors
 function computerChoice() {
   const computerChoices = ["Rock", "Paper", "Scissors"]
-  const computerPick =
-    computerChoices[Math.floor(Math.random() * computerChoices.length)]
-  return computerPick
+  return computerChoices[Math.floor(Math.random() * computerChoices.length)]
 }
 
 const computerPlay = computerChoice()
