@@ -10,19 +10,22 @@ let computerPlay = choices[Math.floor(Math.random() * choices.length)]
 //Compare Player vs Computer Choice
 if (userPlay === computerPlay) {
   alert("Draw")
+} else if (userPlay === "Rock" && computerPlay === "Paper") {
+  alert("You Lose")
+} else if (userPlay === "Rock" && computerPlay === "Scissors") {
+  alert("You Win")
+} else if (userPlay === "Paper" && computerPlay === "Rock") {
+  alert("You Win")
+} else if (userPlay === "Paper" && computerPlay === "Scissors") {
+  alert("You Lose")
+} else if (userPlay === "Scissors" && computerPlay === "Rock") {
+  alert("You Lose")
+} else if (userPlay === "Scissors" && computerPlay === "Paper") {
+  alert("You Win")
+} else {
+  alert("Something went wrong...")
 }
-//if Player picks Rock
-//and Computer pics Rock = Tie
-//and Computer pics Paper = Draw
-//and Computer pics Scissors = Win
-//if Player Pics Paper
-//and Computer pics Rock = Win
-//and Computer pics Paper = Draw
-//and Computer pics Scissors = Lose
-//if Player Picks Scissors
-//and Computer pics Rock = Lose
-//and Computer pics Paper = Win
-//and Computer pics Scissors = Draw
+
 //keep track of winner and loser points??
 //return result to Player
 
