@@ -8,24 +8,27 @@ const computerPlay =
   computerChoices[Math.floor(Math.random() * computerChoices.length)]
 alert("The computer chose " + computerPlay)
 //Compare Player vs Computer Choice for One Game
-if (userChoice === computerPlay) {
-  alert("Draw")
-} else if (userChoice === "Rock" && computerPlay === "Paper") {
-  alert("You Lose")
-} else if (userChoice === "Rock" && computerPlay === "Scissors") {
-  alert("You Win")
-} else if (userChoice === "Paper" && computerPlay === "Rock") {
-  alert("You Win")
-} else if (userChoice === "Paper" && computerPlay === "Scissors") {
-  alert("You Lose")
-} else if (userChoice === "Scissors" && computerPlay === "Rock") {
-  alert("You Lose")
-} else if (userChoice === "Scissors" && computerPlay === "Paper") {
-  alert("You Win")
-} else {
-  alert("Something went wrong...")
+function rpsGame() {
+  if (userChoice === computerPlay) {
+    alert("Draw")
+  } else if (userChoice === "Rock" && computerPlay === "Paper") {
+    alert("You Lose")
+  } else if (userChoice === "Rock" && computerPlay === "Scissors") {
+    alert("You Win")
+  } else if (userChoice === "Paper" && computerPlay === "Rock") {
+    alert("You Win")
+  } else if (userChoice === "Paper" && computerPlay === "Scissors") {
+    alert("You Lose")
+  } else if (userChoice === "Scissors" && computerPlay === "Rock") {
+    alert("You Lose")
+  } else if (userChoice === "Scissors" && computerPlay === "Paper") {
+    alert("You Win")
+  } else {
+    alert("Something went wrong...")
+  }
 }
 
+rpsGame()
 //create new function for 5 round game
 //keep track of scores for rounds
 //return score to player each round
