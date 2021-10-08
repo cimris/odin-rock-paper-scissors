@@ -1,6 +1,5 @@
 // My Scripts
 //Prompt User for Rock, Paper, or Scissors and Store Answer
-
 const userChoice = window.prompt("Choose Rock, Paper, or Scissors: ")
 alert("Your choice is " + userChoice)
 //Randomize Computer Choice for Rock, Paper, or Scissors
