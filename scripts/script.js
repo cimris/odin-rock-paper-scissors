@@ -24,22 +24,30 @@ function rpsRound() {
   if (userChoice === computerPlay) {
     return "Draw"
   } else if (userChoice === "rock" && computerPlay === "paper") {
+    computerScore++
     return "You Lose"
   } else if (userChoice === "rock" && computerPlay === "scissors") {
+    playerScore++
     return "You Win"
   } else if (userChoice === "paper" && computerPlay === "rock") {
+    playerScore++
     return "You Win"
   } else if (userChoice === "paper" && computerPlay === "scissors") {
+    computerScore++
     return "You Lose"
   } else if (userChoice === "scissors" && computerPlay === "rock") {
+    computerScore++
     return "You Lose"
   } else if (userChoice === "scissors" && computerPlay === "paper") {
+    playerScore++
     return "You Win"
   } else {
     return "Something went wrong..."
   }
 }
 console.log(rpsRound()) //delete later
+console.log(playerScore)
+console.log(computerScore)
 alert(rpsRound())
 //create new function for 5 round game
 //keep track of scores for rounds
