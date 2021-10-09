@@ -45,10 +45,13 @@ function rpsRound() {
     return "Something went wrong..."
   }
 }
-alert(rpsRound()) //delete later
-console.log(playerScore)
-console.log(computerScore)
 //create new function for 5 round game
-//keep track of scores for rounds
-//return score to player each round
-//determine game winner
+function game() {
+  rpsRound()
+  rpsRound()
+  rpsRound()
+  rpsRound()
+  rpsRound()
+}
+
+game()
