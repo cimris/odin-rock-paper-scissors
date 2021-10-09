@@ -52,6 +52,16 @@ function game() {
   rpsRound()
   rpsRound()
   rpsRound()
+
+  if (playerScore === computerScore) {
+    return "Draw"
+  } else if (playerScore > computerScore) {
+    return "You Win"
+  } else if (computerScore > playerScore) {
+    return "You Lose"
+  } else {
+    return "Something went wrong..."
+  }
 }
 
-game()
+alert(game())
