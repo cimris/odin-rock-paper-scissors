@@ -47,11 +47,9 @@ function rpsRound() {
 }
 //create new function for 5 round game
 function game() {
-  rpsRound();
-  rpsRound();
-  rpsRound();
-  rpsRound();
-  rpsRound();
+  for (let i = 0; i < 5; i++) {
+    rpsRound();
+  }
 
   if (playerScore === computerScore) {
     return "Game Draw";
