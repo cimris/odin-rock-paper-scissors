@@ -22,27 +22,27 @@ function rpsRound() {
   alert("The computer chose " + computerPlay + ".");
 
   if (userChoice === computerPlay) {
-    return "Round Draw";
+    alert("Round Draw");
   } else if (userChoice === "rock" && computerPlay === "paper") {
     computerScore++;
-    return "Round Lost";
+    alert("Round Lost");
   } else if (userChoice === "rock" && computerPlay === "scissors") {
     playerScore++;
-    return "Round Won";
+    alert("Round Won");
   } else if (userChoice === "paper" && computerPlay === "rock") {
     playerScore++;
-    return "Round Won";
+    alert("Round Won");
   } else if (userChoice === "paper" && computerPlay === "scissors") {
     computerScore++;
-    return "Round Lost";
+    alert("Round Lost");
   } else if (userChoice === "scissors" && computerPlay === "rock") {
     computerScore++;
-    return "Round Lost";
+    alert("Round Lost");
   } else if (userChoice === "scissors" && computerPlay === "paper") {
     playerScore++;
-    return "Round Won";
+    alert("Round Won");
   } else {
-    return "Something went wrong this round...";
+    alert("Something went wrong this round...");
   }
 }
 //create new function for 5 round game
@@ -52,14 +52,14 @@ function game() {
   }
 
   if (playerScore === computerScore) {
-    return "Game Draw";
+    alert("Game Draw");
   } else if (playerScore > computerScore) {
-    return "Game Won";
+    alert("Game Won");
   } else if (computerScore > playerScore) {
-    return "Game Lost";
+    alert("Game Lost");
   } else {
-    return "Something went wrong this game...";
+    alert("Something went wrong this game...");
   }
 }
 
-alert(game());
+game();
