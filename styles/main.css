@@ -1,6 +1,10 @@
 /* CSS Styles */
 * {
   background-color: #fee715ff;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Black = #101820FF */
+.header {
+  color: #101820ff;
+  font-size: 36px;
+}
