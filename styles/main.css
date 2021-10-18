@@ -5,6 +5,12 @@
 }
 
 .header {
+  display: flex;
+  justify-content: center;
+}
+
+.header h1 {
   color: #101820ff;
   font-size: 36px;
+  font-weight: 700; /* Bold */
 }
