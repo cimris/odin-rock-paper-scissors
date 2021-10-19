@@ -64,6 +64,14 @@ function rpsRound() {
 
 //game();
 
-document.getElementById("player-rock").addEventListener("click", function (e) {
+document.getElementById("player-r").addEventListener("click", function (e) {
+  console.log(e);
+});
+
+document.getElementById("player-p").addEventListener("click", function (e) {
+  console.log(e);
+});
+
+document.getElementById("player-s").addEventListener("click", function (e) {
   console.log(e);
 });
