@@ -2,33 +2,30 @@
 //Score
 const playerScore = 0;
 const computerScore = 0;
+const playerRock = document.getElementById("player-r");
+const playerPaper = document.getElementById("player-p");
+const playerScissors = document.getElementById("player-s");
 //User Input Click for Rock, Paper, or Scissors
-//What I think I have to do
-//make area to be selected and make the variable equal selection
-//on click of a selection make the userChoice variable equal the choice
-let userChoice = document.querySelector(".player-area");
+function start() {
+  playerRock.addEventListener("click", function () {
+    rpsRound("rock");
+  });
 
-document.getElementById("player-r").addEventListener("click", function (e) {
-  const userChoice = "rock";
-  console.log(userChoice);
-});
+  playerPaper.addEventListener("click", function () {
+    rpsRound("paper");
+  });
 
-document.getElementById("player-p").addEventListener("click", function (e) {
-  const userChoice = "paper";
-  console.log(userChoice);
-});
-
-document.getElementById("player-s").addEventListener("click", function (e) {
-  const userChoice = "scissors";
-  console.log(userChoice);
-});
+  playerScissors.addEventListener("click", function () {
+    rpsRound("scissors");
+  });
+}
 //Randomize Computer Choice for Rock, Paper, or Scissors
 function computerChoice() {
   const computerChoices = ["rock", "paper", "scissors"];
   return computerChoices[Math.floor(Math.random() * computerChoices.length)];
 }
 //Compare Player vs Computer Choice Function for One Game
-function rpsRound() {
+function rpsRound(userChoice) {
   console.log(userChoice); //delete later
   alert("Your choice is " + userChoice + ".");
 
