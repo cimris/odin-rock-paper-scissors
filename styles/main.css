@@ -43,11 +43,13 @@
 }
 
 .player-area p,
-.computer-area p,
-.player-score p,
-.computer-score p {
+.computer-area p {
   font-size: 18px;
   font-weight: 700;
+}
+
+.player-area p {
+  margin-top: 30px;
 }
 
 .scoreboard {
@@ -60,4 +62,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.player-score p,
+.computer-score p {
+  font-size: 24px;
+  font-weight: 700;
 }
