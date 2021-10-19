@@ -1,7 +1,7 @@
 // My Scripts
 //Score
-let playerScore = 0;
-let computerScore = 0;
+const playerScore = 0;
+const computerScore = 0;
 //User Input Click for Rock, Paper, or Scissors
 //What I think I have to do
 //make area to be selected and make the variable equal selection
