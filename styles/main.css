@@ -37,9 +37,9 @@
 .computer-rock img,
 .computer-paper img,
 .computer-scissors img {
-  border: 7px solid #101820ff;
-  border-radius: 15px;
   margin: 10px;
+  height: 70%;
+  width: auto;
 }
 
 .player-area p,
