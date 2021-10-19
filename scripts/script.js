@@ -3,6 +3,11 @@
 let playerScore = 0;
 let computerScore = 0;
 //User Input Click for Rock, Paper, or Scissors
+//What I think I have to do
+//make area to be selected and make the variable equal selection
+//on click of a selection make the userChoice variable equal the choice
+let userChoice = document.querySelector(".player-area");
+
 document.getElementById("player-r").addEventListener("click", function (e) {
   const userChoice = "rock";
   console.log(userChoice);
