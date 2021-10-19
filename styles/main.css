@@ -42,6 +42,12 @@
   width: auto;
 }
 
+.player-rock img:hover,
+.player-paper img:hover,
+.player-scissors img:hover {
+  transform: scale(1.1);
+}
+
 .player-area p,
 .computer-area p {
   font-size: 18px;

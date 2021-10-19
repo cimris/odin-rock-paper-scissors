@@ -63,3 +63,7 @@ function rpsRound() {
 //}
 
 //game();
+
+document.getElementById("player-rock").addEventListener("click", function (e) {
+  console.log(e);
+});
