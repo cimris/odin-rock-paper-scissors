@@ -32,3 +32,14 @@
   flex-direction: row;
   justify-content: center;
 }
+
+.player-rock img,
+.player-paper img,
+.player-scissors img,
+.computer-rock img,
+.computer-paper img,
+.computer-scissors img {
+  border: 7px solid #101820ff;
+  border-radius: 15px;
+  margin: 10px;
+}
