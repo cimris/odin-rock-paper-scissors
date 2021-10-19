@@ -2,10 +2,21 @@
 //Score
 let playerScore = 0;
 let computerScore = 0;
-//Prompt User for Rock, Paper, or Scissors
-function userPlay() {
-  return window.prompt("Choose Rock, Paper, or Scissors").toLowerCase();
-}
+//User Input Click for Rock, Paper, or Scissors
+document.getElementById("player-r").addEventListener("click", function (e) {
+  const userChoice = "rock";
+  console.log(userChoice);
+});
+
+document.getElementById("player-p").addEventListener("click", function (e) {
+  const userChoice = "paper";
+  console.log(userChoice);
+});
+
+document.getElementById("player-s").addEventListener("click", function (e) {
+  const userChoice = "scissors";
+  console.log(userChoice);
+});
 //Randomize Computer Choice for Rock, Paper, or Scissors
 function computerChoice() {
   const computerChoices = ["rock", "paper", "scissors"];
@@ -13,7 +24,6 @@ function computerChoice() {
 }
 //Compare Player vs Computer Choice Function for One Game
 function rpsRound() {
-  const userChoice = userPlay();
   console.log(userChoice); //delete later
   alert("Your choice is " + userChoice + ".");
 
@@ -63,15 +73,3 @@ function rpsRound() {
 //}
 
 //game();
-
-document.getElementById("player-r").addEventListener("click", function (e) {
-  console.log(e);
-});
-
-document.getElementById("player-p").addEventListener("click", function (e) {
-  console.log(e);
-});
-
-document.getElementById("player-s").addEventListener("click", function (e) {
-  console.log(e);
-});
