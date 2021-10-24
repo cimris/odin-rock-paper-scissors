@@ -2,6 +2,7 @@
 //Score
 const playerScore = 0;
 const computerScore = 0;
+//ElementSelectors
 const playerRock = document.getElementById("player-r");
 const playerPaper = document.getElementById("player-p");
 const playerScissors = document.getElementById("player-s");
