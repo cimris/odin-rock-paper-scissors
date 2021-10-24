@@ -29,10 +29,7 @@ function computerChoice() {
 }
 //Compare Player vs Computer Choice Function for One Game
 function rpsRound(userChoice) {
-  console.log("Your choice is " + userChoice + "."); //delete later
-
   const computerPlay = computerChoice();
-  console.log("The computer chose " + computerPlay + "."); //delete later
 
   if (userChoice === computerPlay) {
     roundDraw(userChoice, computerPlay);
@@ -55,6 +52,8 @@ function rpsRound(userChoice) {
 
 //Functions for Game States
 function roundDraw(userChoice, computerPlay) {
+  console.log(userChoice); //delete later
+  console.log(computerPlay); //delete later
   console.log("Round Draw"); //delete later
   playerTally.innerHTML = playerScore;
   computerTally.innerHTML = computerScore;
@@ -62,6 +61,8 @@ function roundDraw(userChoice, computerPlay) {
   console.log(computerScore); //delete later
 }
 function roundWon(userChoice, computerPlay) {
+  console.log(userChoice); //delete later
+  console.log(computerPlay); //delete later
   console.log("Round Won"); //delete later
   playerScore++;
   playerTally.innerHTML = playerScore;
@@ -70,6 +71,8 @@ function roundWon(userChoice, computerPlay) {
   console.log(computerScore); //delete later
 }
 function roundLost(userChoice, computerPlay) {
+  console.log(userChoice); //delete later
+  console.log(computerPlay); //delete later
   console.log("Round Lost"); //delete later
   computerScore++;
   computerTally.innerHTML = computerScore;
