@@ -35,41 +35,45 @@ function rpsRound(userChoice) {
   console.log("The computer chose " + computerPlay + "."); //delete later
 
   if (userChoice === computerPlay) {
-    roundDraw();
+    roundDraw(userChoice, computerPlay);
   } else if (userChoice === "rock" && computerPlay === "paper") {
-    roundLost();
+    roundLost(userChoice, computerPlay);
   } else if (userChoice === "rock" && computerPlay === "scissors") {
-    roundWon();
+    roundWon(userChoice, computerPlay);
   } else if (userChoice === "paper" && computerPlay === "rock") {
-    roundWon();
+    roundWon(userChoice, computerPlay);
   } else if (userChoice === "paper" && computerPlay === "scissors") {
-    roundLost();
+    roundLost(userChoice, computerPlay);
   } else if (userChoice === "scissors" && computerPlay === "rock") {
-    roundLost();
+    roundLost(userChoice, computerPlay);
   } else if (userChoice === "scissors" && computerPlay === "paper") {
-    roundWon();
+    roundWon(userChoice, computerPlay);
   } else {
     console.log("Something went wrong this round...");
   }
 }
 
 //Functions for Game States
-function roundDraw() {
+function roundDraw(userChoice, computerPlay) {
   console.log("Round Draw"); //delete later
+  playerTally.innerHTML = playerScore;
+  computerTally.innerHTML = computerScore;
   console.log(playerScore); //delete later
   console.log(computerScore); //delete later
 }
-function roundWon() {
+function roundWon(userChoice, computerPlay) {
   console.log("Round Won"); //delete later
   playerScore++;
   playerTally.innerHTML = playerScore;
+  computerTally.innerHTML = computerScore;
   console.log(playerScore); //delete later
   console.log(computerScore); //delete later
 }
-function roundLost() {
+function roundLost(userChoice, computerPlay) {
   console.log("Round Lost"); //delete later
   computerScore++;
   computerTally.innerHTML = computerScore;
+  playerTally.innerHTML = playerScore;
   console.log(playerScore); //delete later
   console.log(computerScore); //delete later
 }
