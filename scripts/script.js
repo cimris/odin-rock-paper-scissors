@@ -1,7 +1,7 @@
 // My Scripts
 //Score
-const playerScore = 0;
-const computerScore = 0;
+let playerScore = 0;
+let computerScore = 0;
 //ElementSelectors
 const playerRock = document.getElementById("player-r");
 const playerPaper = document.getElementById("player-p");
@@ -58,6 +58,10 @@ function rpsRound(userChoice) {
     alert("Something went wrong this round...");
   }
 }
+
+//Game Start?
+
+playerStart();
 //create new function for 5 round game
 //function game() {
 //  for (let i = 0; i < 5; i++) {
