@@ -6,6 +6,8 @@ let computerScore = 0;
 const playerRock = document.getElementById("player-r");
 const playerPaper = document.getElementById("player-p");
 const playerScissors = document.getElementById("player-s");
+const playerTally = document.getElementById("player-tally");
+const computerTally = document.getElementById("computer-tally");
 //User Input Click for Rock, Paper, or Scissors
 function playerStart() {
   playerRock.addEventListener("click", function () {
@@ -60,12 +62,14 @@ function roundDraw() {
 function roundWon() {
   console.log("Round Won"); //delete later
   playerScore++;
+  playerTally.innerHTML = playerScore;
   console.log(playerScore); //delete later
   console.log(computerScore); //delete later
 }
 function roundLost() {
   console.log("Round Lost"); //delete later
   computerScore++;
+  computerTally.innerHTML = computerScore;
   console.log(playerScore); //delete later
   console.log(computerScore); //delete later
 }
