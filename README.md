@@ -9,3 +9,5 @@ I got a better handle on just how functions, variables, and inputs can all be pu
 I began the UI for the Rock, Paper, Scissors game. It is a fairly simple front-end, with black and yellow styling. My goal is to have the interface for the player to make their choice, to have the computer choice displayed, and to keep a tally on the scoreboard for a "first to five" win condition. Having the computer choice shown on the UI will likely be challenging and may be the last thing I add.
 
 However, the front end was incredibly simple and easy to make compared to how long it used to take me to position things with HTML/CSS. Improvement!
+
+I walked away from this project for a bit due to work, but luckily, when I came back I found my code fairly readable. Quite happy about that. Once I regained my footing getting the document selectors up and running as variables - to save myself some time - and reworking the functions came pretty easily. Once I got the hand of one selector I found getting the rest in line rather simple.
