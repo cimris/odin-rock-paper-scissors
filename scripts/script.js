@@ -53,14 +53,11 @@ function rpsRound(userChoice) {
   }
 
   if (computerPlay === "rock") {
-    compRockBig();
-    setTimeout(function () {
-      alert("Hello");
-    }, 3000);
+    compRockImg.classList.add("picked");
   } else if (computerPlay === "paper") {
-    compPaperBig();
+    compPaperImg.classList.add("picked");
   } else if (computerPlay === "scissors") {
-    compScissorsBig();
+    compScissorsImg.classList.add("picked");
   } else {
     console.log("Something went wrong with CPU Image Size");
   }
