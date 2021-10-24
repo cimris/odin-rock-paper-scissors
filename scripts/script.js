@@ -7,7 +7,7 @@ const playerRock = document.getElementById("player-r");
 const playerPaper = document.getElementById("player-p");
 const playerScissors = document.getElementById("player-s");
 //User Input Click for Rock, Paper, or Scissors
-function start() {
+function playerStart() {
   playerRock.addEventListener("click", function () {
     rpsRound("rock");
   });
