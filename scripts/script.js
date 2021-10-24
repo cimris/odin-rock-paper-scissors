@@ -56,17 +56,17 @@ function rpsRound(userChoice) {
     compRockImg.classList.add("picked");
     setTimeout(function () {
       compRockImg.classList.remove("picked");
-    }, 1500);
+    }, 500);
   } else if (computerPlay === "paper") {
     compPaperImg.classList.add("picked");
     setTimeout(function () {
       compPaperImg.classList.remove("picked");
-    }, 1500);
+    }, 500);
   } else if (computerPlay === "scissors") {
     compScissorsImg.classList.add("picked");
     setTimeout(function () {
       compScissorsImg.classList.remove("picked");
-    }, 1500);
+    }, 500);
   } else {
     console.log("Something went wrong with CPU Image Size");
   }
