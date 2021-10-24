@@ -11,3 +11,5 @@ I began the UI for the Rock, Paper, Scissors game. It is a fairly simple front-e
 However, the front end was incredibly simple and easy to make compared to how long it used to take me to position things with HTML/CSS. Improvement!
 
 I walked away from this project for a bit due to work, but luckily, when I came back I found my code fairly readable. Quite happy about that. Once I regained my footing getting the document selectors up and running as variables - to save myself some time - and reworking the functions came pretty easily. Once I got the hand of one selector I found getting the rest in line rather simple.
+
+TODO: add player/computer/draw message for the round, add logic for first to or best of, add game won or lost message, reset game, document styling and clean up
