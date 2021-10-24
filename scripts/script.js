@@ -63,6 +63,16 @@ function rpsRound(userChoice) {
   } else {
     console.log("Something went wrong this round...");
   }
+
+  if (computerPlay === "rock") {
+    compRockBig();
+  } else if (computerPlay === "paper") {
+    compPaperBig();
+  } else if (computerPlay === "scissors") {
+    compScissorsBig();
+  } else {
+    console.log("Something went wrong with CPU Image Size");
+  }
 }
 
 //Functions for Game States
