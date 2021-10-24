@@ -11,18 +11,6 @@ const computerTally = document.getElementById("computer-tally");
 const compRockImg = document.getElementById("comp-r-img");
 const compPaperImg = document.getElementById("comp-p-img");
 const compScissorsImg = document.getElementById("comp-s-img");
-//Functions for Comp Image Enlargement
-function compRockBig() {
-  compRockImg.style.transform = "scale(1.1)";
-}
-
-function compPaperBig() {
-  compPaperImg.style.transform = "scale(1.1)";
-}
-
-function compScissorsBig() {
-  compScissorsImg.style.transform = "scale(1.1)";
-}
 //User Input Click for Rock, Paper, or Scissors
 function playerStart() {
   playerRock.addEventListener("click", function () {
@@ -66,6 +54,9 @@ function rpsRound(userChoice) {
 
   if (computerPlay === "rock") {
     compRockBig();
+    setTimeout(function () {
+      alert("Hello");
+    }, 3000);
   } else if (computerPlay === "paper") {
     compPaperBig();
   } else if (computerPlay === "scissors") {
