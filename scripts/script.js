@@ -8,6 +8,9 @@ const playerPaper = document.getElementById("player-p");
 const playerScissors = document.getElementById("player-s");
 const playerTally = document.getElementById("player-tally");
 const computerTally = document.getElementById("computer-tally");
+const compRockImg = document.getElementById("comp-r-img");
+const compPaperImg = document.getElementById("comp-p-img");
+const compScissorsImg = document.getElementById("comp-s-img");
 //User Input Click for Rock, Paper, or Scissors
 function playerStart() {
   playerRock.addEventListener("click", function () {
