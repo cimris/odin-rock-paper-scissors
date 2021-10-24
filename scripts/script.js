@@ -27,12 +27,10 @@ function computerChoice() {
 }
 //Compare Player vs Computer Choice Function for One Game
 function rpsRound(userChoice) {
-  console.log(userChoice); //delete later
-  alert("Your choice is " + userChoice + ".");
+  console.log("Your choice is " + userChoice + "."); //delete later
 
   const computerPlay = computerChoice();
-  console.log(computerPlay); //delete later
-  alert("The computer chose " + computerPlay + ".");
+  console.log("The computer chose " + computerPlay + "."); //delete later
 
   if (userChoice === computerPlay) {
     roundDraw();
@@ -49,24 +47,29 @@ function rpsRound(userChoice) {
   } else if (userChoice === "scissors" && computerPlay === "paper") {
     roundWon();
   } else {
-    alert("Something went wrong this round...");
+    console.log("Something went wrong this round...");
   }
 }
 
 //Functions for Game States
 function roundDraw() {
-  alert("Round Draw");
+  console.log("Round Draw"); //delete later
+  console.log(playerScore); //delete later
+  console.log(computerScore); //delete later
 }
 function roundWon() {
-  alert("Round Won");
+  console.log("Round Won"); //delete later
   playerScore++;
+  console.log(playerScore); //delete later
+  console.log(computerScore); //delete later
 }
 function roundLost() {
-  alert("Round Lost");
+  console.log("Round Lost"); //delete later
   computerScore++;
+  console.log(playerScore); //delete later
+  console.log(computerScore); //delete later
 }
 //Game Start?
-
 playerStart();
 //create new function for 5 round game
 //function game() {
