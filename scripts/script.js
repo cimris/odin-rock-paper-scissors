@@ -8,6 +8,7 @@ const playerPaper = document.getElementById("player-p");
 const playerScissors = document.getElementById("player-s");
 const playerTally = document.getElementById("player-tally");
 const computerTally = document.getElementById("computer-tally");
+const roundResult = document.getElementById("round-result");
 const compRockImg = document.getElementById("comp-r-img");
 const compPaperImg = document.getElementById("comp-p-img");
 const compScissorsImg = document.getElementById("comp-s-img");
