@@ -75,36 +75,21 @@ function rpsRound(userChoice) {
 
 //Functions for Game States
 function roundDraw(userChoice, computerPlay) {
-  console.log(userChoice); //delete later
-  console.log(computerPlay); //delete later
-  console.log("Round Draw"); //delete later
   playerTally.innerHTML = playerScore;
   computerTally.innerHTML = computerScore;
   roundResult.innerHTML = "The round is a draw.";
-  console.log(playerScore); //delete later
-  console.log(computerScore); //delete later
 }
 function roundWon(userChoice, computerPlay) {
-  console.log(userChoice); //delete later
-  console.log(computerPlay); //delete later
-  console.log("Round Won"); //delete later
   playerScore++;
   playerTally.innerHTML = playerScore;
   computerTally.innerHTML = computerScore;
   roundResult.innerHTML = "User has won the round.";
-  console.log(playerScore); //delete later
-  console.log(computerScore); //delete later
 }
 function roundLost(userChoice, computerPlay) {
-  console.log(userChoice); //delete later
-  console.log(computerPlay); //delete later
-  console.log("Round Lost"); //delete later
   computerScore++;
   computerTally.innerHTML = computerScore;
   playerTally.innerHTML = playerScore;
   roundResult.innerHTML = "Computer has won the round.";
-  console.log(playerScore); //delete later
-  console.log(computerScore); //delete later
 }
 //Game Start?
 playerStart();

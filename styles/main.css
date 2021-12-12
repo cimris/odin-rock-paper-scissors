@@ -80,7 +80,6 @@
 }
 
 /* Properties for Selection */
-
 .picked {
   transform: scale(1.1);
 }
