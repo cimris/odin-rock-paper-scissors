@@ -91,6 +91,7 @@ function roundLost(userChoice, computerPlay) {
   playerTally.innerHTML = playerScore;
   roundResult.innerHTML = "Computer has won the round.";
 }
+
 //Game Start?
 playerStart();
 //create new function for 5 round game
@@ -109,5 +110,3 @@ playerStart();
 //    alert("Something went wrong this game...");
 //  }
 //}
-
-//game();

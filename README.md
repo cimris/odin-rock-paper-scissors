@@ -12,4 +12,8 @@ However, the front end was incredibly simple and easy to make compared to how lo
 
 I walked away from this project for a bit due to work, but luckily, when I came back I found my code fairly readable. Quite happy about that. Once I regained my footing getting the document selectors up and running as variables - to save myself some time - and reworking the functions came pretty easily. Once I got the hand of one selector I found getting the rest in line rather simple.
 
-TODO: add logic for first to or best of, add game won or lost message, reset game, document styling and clean up
+Update 11/12/21
+
+I got swamped at work (the joys of being a teacher). I finally cleaned up and added round won messages. I believe this will complete the first iteration of the game. I may revisit this later to add in logic for "first to five" as well as a way to change the entire page to announce the winner and a game reset. However, I have to admit I got bored of this project and want to use the DOM Methods on another project instead.
+
+I do, however, feel this gave me a strong basic understanding of how to interact with the DOM.
