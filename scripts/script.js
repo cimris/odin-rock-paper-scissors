@@ -80,6 +80,7 @@ function roundDraw(userChoice, computerPlay) {
   console.log("Round Draw"); //delete later
   playerTally.innerHTML = playerScore;
   computerTally.innerHTML = computerScore;
+  roundResult.innerHTML = "Nobody";
   console.log(playerScore); //delete later
   console.log(computerScore); //delete later
 }
@@ -90,6 +91,7 @@ function roundWon(userChoice, computerPlay) {
   playerScore++;
   playerTally.innerHTML = playerScore;
   computerTally.innerHTML = computerScore;
+  roundResult.innerHTML = "User";
   console.log(playerScore); //delete later
   console.log(computerScore); //delete later
 }
@@ -100,6 +102,7 @@ function roundLost(userChoice, computerPlay) {
   computerScore++;
   computerTally.innerHTML = computerScore;
   playerTally.innerHTML = playerScore;
+  roundResult.innerHTML = "Computer";
   console.log(playerScore); //delete later
   console.log(computerScore); //delete later
 }
