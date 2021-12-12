@@ -94,19 +94,3 @@ function roundLost(userChoice, computerPlay) {
 
 //Game Start?
 playerStart();
-//create new function for 5 round game
-//function game() {
-//  for (let i = 0; i < 5; i++) {
-//    rpsRound();
-//  }
-
-//  if (playerScore === computerScore) {
-//    alert("Game Draw");
-//  } else if (playerScore > computerScore) {
-//    alert("Game Won");
-//  } else if (computerScore > playerScore) {
-//    alert("Game Lost");
-//  } else {
-//    alert("Something went wrong this game...");
-//  }
-//}
